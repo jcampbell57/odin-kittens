@@ -6,7 +6,7 @@
   <% @kittens.each do |kitten| %>
     <%= render kitten %>
     <p>
-      <%= link_to "Show this kitten", kitten %>
+      <%= button_to "Show this kitten", kitten %><%= button_to "Destroy this kitten", @kitten, method: :delete %>
     </p>
   <% end %>
 </div>
